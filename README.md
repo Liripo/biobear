@@ -22,8 +22,8 @@ pip install polars # needed for `to_polars` method
 Create a file with some GFF data:
 
 ```bash
-echo "chr1\t.\tgene\t1\t100\t.\t+\t.\tgene_id=1;gene_name=foo" > test.gff
-echo "chr1\t.\tgene\t200\t300\t.\t+\t.\tgene_id=2;gene_name=bar" >> test.gff
+echo -e "chr1\t.\tgene\t1\t100\t.\t+\t.\tgene_id=1;gene_name=foo" > test.gff
+echo -e "chr1\t.\tgene\t200\t300\t.\t+\t.\tgene_id=2;gene_name=bar" >> test.gff
 ```
 
 Then you can use biobear to read a file:
